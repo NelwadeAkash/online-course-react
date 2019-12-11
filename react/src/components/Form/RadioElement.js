@@ -9,25 +9,31 @@ import FormLabel from '@material-ui/core/FormLabel';
 
 
 
-export default function RadioElement() {
+export default function RadioElement(props) 
+{
+    var option=props.data.map((data,index) =>
+    (
+        console.log(data)
+        //   <menuitem key={index} value={data}>{data} </menuitem>
+    )
+
+    )
+
+
+
+
     return (
         <div>
             {/* <input type="radio" value="option1" checked={true} /> */}
         <FormControl>
             <RadioGroup>
-            <FormControlLabel
-           label="Gender"
-           labelPlacement="Gender"
-          value="Male"
-          control={<Radio color="primary" />}
-          value="female"
-          control={<Radio color="primary" />}
-          
-        />
-       
+           
+           <Radio>
+               {option}
+           </Radio>
         </RadioGroup>
         </FormControl>
         </div>
-      );
+      )
     }
     

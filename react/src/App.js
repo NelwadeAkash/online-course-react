@@ -12,6 +12,7 @@ import {Button,Navbar,FormControl,Form,InputGroup,Nav,Image,Dropdown,DropdownBut
 import { BrowserRouter as Router,Switch,Route,Link } from 'react-router-dom';
 import RouterElement from './components/Form/Router';
 import Register from './components/Form/Register';
+import RadioElement from './components/Form/RadioElement';
 
 //import login from './Login';
 
@@ -19,7 +20,7 @@ function App() {
 
   return (
     <div className="App">
-{/*  
+ 
             <i class="fa fa-creative-commons"></i>
                 <Navbar bg="dark" variant="dark">
                     <Navbar.Brand href=""><strong>Code-Course</strong></Navbar.Brand>
@@ -42,20 +43,21 @@ function App() {
                     <FormControl type="text" placeholder="Search" className="mr-sm-2" />
                     <Button variant="outline-info">Search</Button>
                     <Button variant="outline-info" href="/login">Login</Button>
-                    <Button variant="outline-info">Register</Button>
+                    <Button variant="outline-info" href="/Register">Register</Button>
                     </Form>
-                </Navbar> */}
+                </Navbar>
 
            
      {/* <SelectElement></SelectElement> */}
       {/* <Login/> */}
       {/* <Comment></Comment> */}
        {/* <Input></Input> */}
-       {/* <Home></Home> */}
+       <Home></Home>
        {/* <footer class="page-footer font-small mdb-color lighten-3 pt-4" style="background-color:lightblue;">
          </footer> */}
          <RouterElement/>
-         <Register></Register>
+         {/* <Register></Register> */}
+         {/* <RadioElement data={["male","female","s"]} /> */}
     </div>
   );
 }

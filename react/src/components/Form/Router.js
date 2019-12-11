@@ -3,6 +3,7 @@ import { BrowserRouter as Router,Switch,Route,Link } from 'react-router-dom';
 import Login from './Login';
 import About from './About';
 import Home from './Home';
+import Register from './Register';
 
 
 
@@ -17,6 +18,7 @@ export class RouterElement extends Component {
                    <Route exact path='/login' component={Login}/>
                    <Route exact path='/about' component={About}/>
                    <Route exact path='/home' component={Home}/>
+                   <Route exact path='/Register' component={Register}/>
                  </Switch>
                </Router>
 

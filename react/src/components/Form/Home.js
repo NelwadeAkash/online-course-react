@@ -7,11 +7,12 @@ import RouterElement from './Router';
     render() {
         return (
             <div>
-                <div>
+               
+                   Welcome !!
                    {/* <img  height="450" width="1450" src={require('./E-image.jpg')}  /> */}
                    
                 
-                </div>
+                
                           
             </div>
         )
